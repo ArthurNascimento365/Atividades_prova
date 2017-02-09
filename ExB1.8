@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+main (){
+	short op1=0,op2=0,op3=0,contfp=0;
+	float valmedp,valtotped1,valtotped2,valtotped3,valtotfran;
+	printf("---------Marmitas do seu Arthur-----------!\n\n");
+	printf("\n1-\tFile\n2-\tFrango\n3-\tPeixe\n");
+	printf("\n1-Selecione a proteina: ");
+	scanf("%d",&op1);
+	switch(op1){
+		case 1 : valmedp = valmedp + 22.45; 
+		valtotped1 = 22.45 + 3.50; 
+		contfp ++; 
+		break;
+		case 2 : valmedp = valmedp + 19.50; 
+		valtotped1 = 19.50 + 3.50; 
+		valtotfran = valtotfran + 19.50; 
+		break;
+		case 3 : valmedp = valmedp + 24.90; 
+		valtotped1 = 24.90 + 3.50; 
+		contfp ++; 
+		break;
+		default : printf("\nOpcao invalida");
+	}
+	printf("\n\n2-Selecione a proteina: ");
+	scanf("%d",&op2);
+	switch(op2){
+		case 1 : valmedp = valmedp + 22.45; 
+		valtotped2 = 22.45 + 3.50; 
+		contfp ++; 
+		break;
+		case 2 : valmedp = valmedp + 19.50; 
+		valtotped2 = 19.50 + 3.50; 
+		valtotfran = valtotfran + 19.50; 
+		break;
+		case 3 : valmedp = valmedp + 24.90; 
+		valtotped2 = 24.90 + 3.50; 
+		contfp ++; 
+		break;
+		default : printf("\nOpcao invalida");
+	}
+	printf("\n\n3-Selecione a proteina: ");
+	scanf("%d",&op3);
+	switch(op3){
+		case 1 : valmedp = valmedp + 22.45; 
+		valtotped3 = 22.45 + 3.50; 
+		contfp ++; 
+		break;
+		case 2 : valmedp = valmedp + 19.50; 
+		valtotped3 = 19.50 + 3.50; 
+		valtotfran = valtotfran + 19.50; 
+		break;
+		case 3 : valmedp = valmedp + 24.90; 
+		valtotped3 = 24.90 + 3.50; 
+		contfp ++; 
+		break;
+		default : printf("\nOpcao invalida");
+	}
+		printf("\nA media dos valores dos 3 pedidos:\t%.2f",valmedp);
+		printf("\nvalor total pedido 1:\t%.2f",valtotped1);
+		printf("\nvalor total pedido 2:\t%.2f",valtotped2);
+		printf("\nvalor total pedido 3:\t%.2f",valtotped3);
+		printf("\nQuantidade de pedidos file ou peixe:\t%d",contfp);
+		printf("\nValor total pedidos com frango:\t%.2f",valtotfran);
+}
